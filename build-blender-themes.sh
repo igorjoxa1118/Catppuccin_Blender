@@ -1,5 +1,10 @@
 #!/bin/bash
 
+if [ "$(id -u)" = 0 ]; then
+    echo "This script MUST NOT be run as root user."
+    exit 1
+fi
+
 RED='\033[0;31m'
 GREEN='\033[0;32m'
 ORANGE='\033[0;33m'
@@ -16,6 +21,7 @@ destiny=$destination1
 
 search1="Catppuccin_Blender"
 search=$search1
+
 
 tput setaf 2
 echo "#############################################################################################"
