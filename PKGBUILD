@@ -14,7 +14,7 @@ sha256sums=('SKIP')
 
 package() {
   cd ${srcdir}/${srcname}/
-  install -dm755 "${pkgdir}/etc/skel/.config/blender/colorshemas"
+  install -dm755 "${pkgdir}/$USER/.config/blender/colorshemas"
 
-  cp -rf themes/* "$pkgdir/etc/skel/.config/blender/colorshemas"
+  cp -rf themes/* "$pkgdir/$USER/.config/blender/colorshemas"
 }
