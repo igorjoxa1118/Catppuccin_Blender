@@ -499,6 +499,7 @@
         object_active="#89b4fa"
         text_keyframe="#ffc633"
         camera="#89b4fa"
+        camera_passepartout="#30344666"
         empty="#ffc633"
         light="#fab387ff"
         speaker="#000000"
